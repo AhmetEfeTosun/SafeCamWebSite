@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SafeCam - CCTV Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+    <a href="index.html" class="navbar-brand ms-lg-5">
+        <h1 class="display-5 m-0 text-primary">
+            Safe<span class="text-secondary">Cam</span>
+        </h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0 align-items-center">
+            <a href="index.html" class="nav-item nav-link active">Ana Sayfa</a>
+            <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+            <a href="misyonvizyon.html" class="nav-item nav-link">Misyon&Vizyon</a>
+            <a href="service.html" class="nav-item nav-link">Hizmetlerimiz</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Diğer Sayfalar</a>
+                <div class="dropdown-menu m-0">
+                    <a href="price.html" class="dropdown-item">Ödeme Planı</a>
+                    <a href="team.html" class="dropdown-item">Ekibimiz</a>
+                    <a href="testimonial.html" class="dropdown-item">Referanslar</a>
+                    <a href="announcements.html" class="dropdown-item">Tüm Duyurular</a>
+                    <a href="contact.html" class="dropdown-item">İletişim</a>
+                </div>
+            </div>
+            <div class="vr me-3"></div> <!-- Dikey çizgi -->
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-secondary text-white me-2 rounded-pill px-4">Giriş Yap</a>
+                    <a href="register.html" class="btn btn-outline-primary rounded-pill px-4">Kaydol</a>
+                </div>
+            </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Carousel Başlangıç -->
+<div class="container-fluid p-0 mb-5">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="1. Slayt"></button>
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="2. Slayt"></button>
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="3. Slayt"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/carousel-1.jpg" alt="Görsel">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase animated bounceInDown">En İyi Güvenlik Hizmetleri</h5>
+                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Aileniz İçin Güvenli ve Korunaklı Bir Ev</h1>
+                        <a href="price.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Teklif Alın</a>
+                        <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Bize Ulaşın</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/carousel-2.jpg" alt="Görsel">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase animated bounceInDown">En İyi Güvenlik Hizmetleri</h5>
+                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Müşterilerimiz İçin En Yüksek Standart</h1>
+                        <a href="price.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Teklif Alın</a>
+                        <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Bize Ulaşın</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/carousel-3.jpg" alt="Görsel">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase animated bounceInDown">En İyi Güvenlik Hizmetleri</h5>
+                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Yaşam Alanlarınızda Kesintisiz Güvenlik</h1>
+                        <a href="price.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Teklif Alın</a>
+                        <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Bize Ulaşın</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel Bitiş -->
+
+<!-- Duyurular Başlangıç -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-12">
+                <div class="mb-4 d-flex justify-content-between">
+                    <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Duyurular</h5>
+                    <a href="announcements.html" class="text-secondary">Tüm Duyurular</a>
+                </div>
+                <!-- Kaydırılabilir Duyuru Alanı Başlangıç -->
+                <div class="announcement-list" style="max-height: 400px; overflow-y: auto;">
+                    <!-- 1. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal1">
+                        <h5 class="mb-0 text-primary announcement-title">CCTV Kamera Kurulumu</h5>
+                        <p class="mb-0">Yeni CCTV kameraları kurulumunu tamamladık. 10/12/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 1. Duyuru Bitiş -->
+                    
+                    <!-- 2. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal2">
+                        <h5 class="mb-0 text-primary announcement-title">Safe Cam Sistemi Geliştirmeleri</h5>
+                        <p class="mb-0">Yeni güvenlik özellikleri eklendi. 05/12/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 2. Duyuru Bitiş -->
+                    
+                    <!-- 3. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal3">
+                        <h5 class="mb-0 text-primary announcement-title">Yeni Web Sitesi Güncellemesi</h5>
+                        <p class="mb-0">Web sitesi yeni tasarıma kavuştu. 01/12/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 3. Duyuru Bitiş -->
+
+                    <!-- 4. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal4">
+                        <h5 class="mb-0 text-primary announcement-title">Ofis Taşınması Duyurusu</h5>
+                        <p class="mb-0">Ofisimiz yeni yerine taşındı. 20/11/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 4. Duyuru Bitiş -->
+
+                    <!-- 5. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal5">
+                        <h5 class="mb-0 text-primary announcement-title">Yeni Güvenlik Kamerası Projesi</h5>
+                        <p class="mb-0">Yeni projede güvenlik kameraları kullanıldı. 15/11/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 5. Duyuru Bitiş -->
+
+                    <!-- 6. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal6">
+                        <h5 class="mb-0 text-primary announcement-title">Sistem Bakımı Duyurusu</h5>
+                        <p class="mb-0">Sistem bakım çalışmaları nedeniyle kısa süreli kesinti yaşanabilir. 13/11/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 6. Duyuru Bitiş -->
+
+                    <!-- 7. Duyuru Başlangıç -->
+                    <div class="announcement-item mb-4" data-bs-toggle="modal" data-bs-target="#announcementModal7">
+                        <h5 class="mb-0 text-primary announcement-title">Yeni Mobil Uygulama Lansmanı</h5>
+                        <p class="mb-0">Mobil uygulamamız artık App Store ve Google Play'de yayında. 10/11/2024</p>
+                    </div>
+                    <hr>
+                    <!-- 7. Duyuru Bitiş -->
+                </div>
+                <!-- Kaydırılabilir Duyuru Alanı Bitiş -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Duyurular Bitiş -->
+
+<!-- Duyuru Modalları Başlangıç -->
+
+<!-- 1. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal1" tabindex="-1" aria-labelledby="announcementModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal1Label">CCTV Kamera Kurulumu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">10/12/2024</h6>
+                <p>Yeni CCTV kameraları kurulumunu tamamladık.</p>
+                
+                <!-- Görsel -->
+                <img src="img/carousel-1.jpg" alt="CCTV Kamera Kurulumu Görseli" class="d-block mb-3" style="max-width: 300px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 1. Duyuru Modal Bitiş -->
+
+<!-- 2. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal2" tabindex="-1" aria-labelledby="announcementModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal2Label">Safe Cam Sistemi Geliştirmeleri</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">05/12/2024</h6>
+                <p>Yeni güvenlik özellikleri eklendi.</p>
+
+                <!-- Görsel -->
+                <img src="" alt="" class="d-block mb-3" style="max-width: 300px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 2. Duyuru Modal Bitiş -->
+
+<!-- 3. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal3" tabindex="-1" aria-labelledby="announcementModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal3Label">Yeni Web Sitesi Güncellemesi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">01/12/2024</h6>
+                <p>Web sitesi yeni tasarıma kavuştu.</p>
+
+                <!-- Görsel -->
+                <img src="cctv-website-template.jpg" alt="Web Sitesi Güncellemesi Görseli" class="d-block mb-3" style="max-width: 300px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 3. Duyuru Modal Bitiş -->
+
+<!-- 4. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal4" tabindex="-1" aria-labelledby="announcementModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal4Label">Ofis Taşınması Duyurusu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">20/11/2024</h6>
+                <p>Ofisimiz yeni yerine taşındı.</p>
+
+                <!-- Görsel -->
+                <img src="img/kocaeli-universitesi.jpg" alt="Ofis Taşınması Görseli" class="d-block mb-3" style="max-width: 300px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 4. Duyuru Modal Bitiş -->
+  
+<!-- 5. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal5" tabindex="-1" aria-labelledby="announcementModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal5Label">Yeni Güvenlik Kamerası Projesi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">15/11/2024</h6>
+                <p>Yeni projede güvenlik kameraları kullanıldı.</p>
+
+                <!-- Görsel -->
+                <img src="img/carousel-2.jpg" alt="Yeni Güvenlik Kamerası Projesi Görseli" class="d-block mb-3" style="max-width: 300px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 5. Duyuru Modal Bitiş -->
+
+<!-- 6. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal6" tabindex="-1" aria-labelledby="announcementModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal6Label">Sistem Bakımı Duyurusu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">13/11/2024</h6>
+                <p>Sistem bakım çalışmaları nedeniyle kısa süreli kesinti yaşanabilir.</p>
+
+                <!-- Görsel -->
+                <img src="" alt="" class="d-block mb-3" style="max-width: 150px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 6. Duyuru Modal Bitiş -->
+
+<!-- 7. Duyuru Modal Başlangıç -->
+<div class="modal fade" id="announcementModal7" tabindex="-1" aria-labelledby="announcementModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announcementModal7Label">Yeni Mobil Uygulama Lansmanı</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-muted">10/11/2024</h6>
+                <p>Mobil uygulamamız artık App Store ve Google Play'de yayında.</p>
+
+                <!-- Görsel -->
+                <img src="" alt="" class="d-block mb-3" style="max-width: 150px; border-radius: 8px;">
+            </div>
+            <div class="modal-footer d-flex justify-content-end">
+                <!-- Eki İndir Butonu -->
+                <a href="WebTasarımDersiProjesi.pdf" class="btn btn-secondary me-2" download>
+                    <i class="fa-solid"></i> Eki İndir
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 7. Duyuru Modal Bitiş -->
+<!-- Duyuru Modalları Bitiş -->
+
+<!-- İstatistik Bölümü Başlangıç -->
+<div class="container py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">SAYILARLA BİZ</h5>
+            <h1 class="display-5 mb-0">Başarılarımız ve Rakamlarımız</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <h1 class="display-4 text-primary">+4,000</h1>
+                <p class="fs-5 mb-0">Mutlu Müşteri</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="display-4 text-primary">+1,200</h1>
+                <p class="fs-5 mb-0">Tamamlanan Proje</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="display-4 text-primary">+15</h1>
+                <p class="fs-5 mb-0">Yıllık Deneyim</p>
+            </div>
+        </div>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4 text-center">
+                <h1 class="display-4 text-primary">+350</h1>
+                <p class="fs-5 mb-0">Kamera Sistem Kurulumu</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="display-4 text-primary">+150</h1>
+                <p class="fs-5 mb-0">Güvenlik Alarm Kurulumu</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="display-4 text-primary">24/7</h1>
+                <p class="fs-5 mb-0">Destek Hizmeti</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- İstatistik Bölümü Sonu -->
+    
+<!-- Altbilgi Başlangıç -->
+<div class="container-fluid bg-dark text-light mt-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container pt-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Hızlı Linkler</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Ana Sayfa</a>
+                    <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                    <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                    <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Popüler Linkler</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Ana Sayfa</a>
+                    <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                    <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                    <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Bizimle İletişime Geçin</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Kabaoğlu, Baki Komsuoğlu bulvarı No:515, Umuttepe, 41001 İzmit/Kocaeli</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@ornek.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+90 123 456 78 90</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Bizi Takip Edin</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-primary text-light py-4">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">SafeCam</a>. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Altbilgi Bitiş -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
