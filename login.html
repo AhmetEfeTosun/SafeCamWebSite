@@ -46,7 +46,7 @@
             const password = document.getElementById('password').value;
 
             // Admin giriş kontrolü
-            if (email === "admin" && password === "1234") {
+            if (email === "admin" && password === "1234") { // Eğer email "admin" ve şifre "1234" ise sadece giriş sağlanabilir.
                 window.location.href = "adminpanel.html"; // Admin paneline yönlendir.
             } else {
                 alert("Hatalı giriş! Lütfen doğru bilgileri girin.");
