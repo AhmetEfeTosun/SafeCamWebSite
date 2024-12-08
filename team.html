@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SafeCam - CCTV Website Template</title>
+    <title>SafeCam</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -31,12 +31,34 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
-        .carousel-control-prev, .carousel-control-next {
-            z-index: 5;
+        .carousel-control-prev,
+        .carousel-control-next {
+            z-index: 10; /* Sosyal medya butonlarının altında */
+            opacity: 0.8; /* Hafif şeffaflık */
+            transition: opacity 0.3s ease, filter 0.3s ease;
+            pointer-events: auto; /* Sadece okların görselleri tıklanabilir */
         }
-    
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            opacity: 1; /* Hover durumunda tam görünürlük */
+            filter: brightness(1.2); /* Hafif parlaklık */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7)); /* Gölge ekle */
+            transition: filter 0.3s ease;
+            pointer-events: none; /* Sadece kapsayıcı tıklanabilir */
+        }
+
+        .carousel-control-prev:hover .carousel-control-prev-icon,
+        .carousel-control-next:hover .carousel-control-next-icon {
+            filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.9)); /* Hover gölgesini artır */
+        }
+
         .social-links {
-            z-index: 10;
+            z-index: 20; /* Okların üzerinde olacak */
         }
     </style>
 </head>
@@ -96,115 +118,140 @@
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Ekip Üyelerimiz</h5>
+            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Ekİp Üyelerİmİz</h5>
             <h1 class="display-5 mb-0">Profesyonel Ekibimiz</h1>
         </div>
-        
+
         <!-- Ekip Üyeleri Slider -->
         <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
-                <!-- Slide 1 - İlk 3 Kişi -->
+                <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <div class="row g-5">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="position-relative rounded-top">
-                                <img class="img-fluid rounded-top w-100" src="img/team-1.jpg" alt="Ekip Üyesi 1">
-                                <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    <div class="row justify-content-center">
+                        <!-- Üye 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="team-member">
+                                <div class="position-relative rounded-top">
+                                    <img class="img-fluid rounded-top w-100" src="img/team-1.jpg" alt="Ahmet Yılmaz">
+                                    <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bg-primary text-center rounded-bottom p-4">
-                                <h3 class="text-white">Ahmet Yılmaz</h3>
-                                <p class="text-white m-0">Proje Yöneticisi</p>
+                                <div class="bg-primary text-center rounded-bottom p-4">
+                                    <h3 class="text-white">Ahmet Yılmaz</h3>
+                                    <p class="text-white m-0">Proje Yöneticisi</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="position-relative rounded-top">
-                                <img class="img-fluid rounded-top w-100" src="img/team-2.jpg" alt="Ekip Üyesi 2">
-                                <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                        <!-- Üye 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="team-member">
+                                <div class="position-relative rounded-top">
+                                    <img class="img-fluid rounded-top w-100" src="img/team-2.jpg" alt="Hakan Kaya">
+                                    <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bg-primary text-center rounded-bottom p-4">
-                                <h3 class="text-white">Hakan Kaya</h3>
-                                <p class="text-white m-0">Yazılım Uzmanı</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="position-relative rounded-top">
-                                <img class="img-fluid rounded-top w-100" src="img/team-3.jpg" alt="Ekip Üyesi 3">
-                                <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <div class="bg-primary text-center rounded-bottom p-4">
+                                    <h3 class="text-white">Hakan Kaya</h3>
+                                    <p class="text-white m-0">Yazılım Uzmanı</p>
                                 </div>
-                            </div>
-                            <div class="bg-primary text-center rounded-bottom p-4">
-                                <h3 class="text-white">Mehmet Demir</h3>
-                                <p class="text-white m-0">Kurulum Uzmanı</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 2 - Kalan 3 Kişi -->
+                <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <div class="row g-5">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="position-relative rounded-top">
-                                <img class="img-fluid rounded-top w-100" src="img/team-4.jpg" alt="Ekip Üyesi 4">
-                                <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    <div class="row justify-content-center">
+                        <!-- Üye 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="team-member">
+                                <div class="position-relative rounded-top">
+                                    <img class="img-fluid rounded-top w-100" src="img/team-3.jpg" alt="Mehmet Demir">
+                                    <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bg-primary text-center rounded-bottom p-4">
-                                <h3 class="text-white">Berke Ölmez</h3>
-                                <p class="text-white m-0">Montaj ve Bakım Uzmanı</p>
+                                <div class="bg-primary text-center rounded-bottom p-4">
+                                    <h3 class="text-white">Mehmet Demir</h3>
+                                    <p class="text-white m-0">Kurulum Uzmanı</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="position-relative rounded-top">
-                                <img class="img-fluid rounded-top w-100" src="img/team-5.jpg" alt="Ekip Üyesi 5">
-                                <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                        <!-- Üye 4 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="team-member">
+                                <div class="position-relative rounded-top">
+                                    <img class="img-fluid rounded-top w-100" src="img/team-4.jpg" alt="Berke Ölmez">
+                                    <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bg-primary text-center rounded-bottom p-4">
-                                <h3 class="text-white">Seda Yıldız</h3>
-                                <p class="text-white m-0">Müşteri Temsilcisi</p>
+                                <div class="bg-primary text-center rounded-bottom p-4">
+                                    <h3 class="text-white">Berke Ölmez</h3>
+                                    <p class="text-white m-0">Montaj ve Bakım Uzmanı</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="position-relative rounded-top">
-                                <img class="img-fluid rounded-top w-100" src="img/team-6.jpg" alt="Ekip Üyesi 6">
-                                <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <!-- Üye 5 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="team-member">
+                                <div class="position-relative rounded-top">
+                                    <img class="img-fluid rounded-top w-100" src="img/team-5.jpg" alt="Seda Yıldız">
+                                    <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-primary text-center rounded-bottom p-4">
+                                    <h3 class="text-white">Seda Yıldız</h3>
+                                    <p class="text-white m-0">Müşteri Temsilcisi</p>
                                 </div>
                             </div>
-                            <div class="bg-primary text-center rounded-bottom p-4">
-                                <h3 class="text-white">Kemal Aydın</h3>
-                                <p class="text-white m-0">Sistem Entegrasyon Uzmanı</p>
+                        </div>
+                        <!-- Üye 6 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="team-member">
+                                <div class="position-relative rounded-top">
+                                    <img class="img-fluid rounded-top w-100" src="img/team-6.jpg" alt="Kemal Aydın">
+                                    <div class="d-flex flex-column bg-white p-1 social-links" style="position: absolute; bottom: 10px; right: 10px;">
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                        <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                    </div>
+                                </div>
+                                <div class="bg-primary text-center rounded-bottom p-4">
+                                    <h3 class="text-white">Kemal Aydın</h3>
+                                    <p class="text-white m-0">Sistem Entegrasyon Uzmanı</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- Kontroller -->
             <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
